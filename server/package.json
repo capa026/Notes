@@ -1,0 +1,26 @@
+{
+  "name": "sqlitenotes",
+  "version": "1.0.0",
+  "description": "Personal app for taking notes and trying sqlite",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --env-file=.env index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sqlite",
+    "notes",
+    "react",
+    "database"
+  ],
+  "author": "Carlos Pacheco",
+  "license": "ISC",
+  "dependencies": {
+    "@libsql/client": "^0.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}

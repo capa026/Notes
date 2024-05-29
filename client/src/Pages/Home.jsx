@@ -23,7 +23,7 @@ const Home = () => {
   if (!notes) return <PageLoader />;
 
   return (
-    <PageDefaultLayout styles="mt-3">
+    <PageDefaultLayout styles="mt-3 ">
       <div className="flex justify-between items-center bg-white rounded-md my-6 p-2 shadow">
         <h1 className="text-gray-500">Cantidad de notas: {notes.length}</h1>
         <div className="flex p-3 gap-2">

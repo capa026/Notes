@@ -7,9 +7,9 @@ const Note = ({ note, listMode }) => {
 
   return (
     <div
-      className={`flex flex-col rounded-lg shadow-lg cursor-pointer bg-slate-100 hover:shadow-none ${
+      className={`flex flex-col rounded-lg shadow-lg shadow-[rgba(0,0,0,0.4)] cursor-pointer bg-slate-100 hover:shadow-none ${
         listMode === "row" ? "w-40 h-40" : "w-[90%] md:w-[60%] h-32 md:h-48"
-      } transition-shadow duration-300 overflow-hidden text`}
+      } transition-all duration-100 overflow-hidden`}
     >
       <div className="flex justify-between items-center p-2 gap-2">
         <h1 className="font-medium underline decoration-cyan-500 text-gray-600 text-nowrap overflow-hidden text-ellipsis">

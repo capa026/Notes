@@ -4,7 +4,7 @@ const SideBarConfig = ({ openSidebar, setOpenSidebar }) => {
   };
   return (
     <div
-      className={`sidebar--back fixed w-full h-full right-0 top-0 bg-[rgba(0,0,0,0.8)] ${
+      className={`sidebar--back fixed h-full right-0 top-0 bg-[rgba(0,0,0,0.8)] backdrop-blur-sm ${
         openSidebar ? "w-full" : "w-0"
       } transition-all duration-200 select-none`}
       onClick={(e) => handleClose(e)}

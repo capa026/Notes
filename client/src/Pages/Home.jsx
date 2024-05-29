@@ -1,11 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import PageDefaultLayout from "../Components/PageDefaultLayout";
 import { useNotes } from "../context/Tasks";
 import Note from "../Components/Note";
 import PageLoader from "../Components/loaders/PageLoader";
 import { Columns2, Rows2 } from "lucide-react";
 import IconContainer from "../Components/IconContainer";
+
 const Home = () => {
+  const notesContainerRef = useRef();
+
   const [listMode, setListMode] = useState("row");
   const { notes, getNotes, trigger } = useNotes();
 
@@ -44,7 +47,7 @@ const Home = () => {
         <div
           className={`flex ${listMode === "row" && "flex-row justify-center"} ${
             listMode === "col" && "flex-col items-center"
-          } gap-5 py-3 flex-wrap`}
+          } gap-5 py-3 flex-wrap transition-all duration-200`}
         >
           {notes.map((note) => (
             <Note key={note.id} note={note} listMode={listMode} />

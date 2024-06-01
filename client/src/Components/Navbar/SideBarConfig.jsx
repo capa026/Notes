@@ -1,3 +1,14 @@
+import { Link } from "react-router-dom";
+
+const LinkCmp = ({ children, to }) => {
+  return (
+    <Link to={to}>
+      <h1 className="flex p-3 text-white cursor-pointer hover:bg-slate-900 hover:border-l-2 hover:border-white transition-all duration-150">
+        {children}
+      </h1>
+    </Link>
+  );
+};
 const SideBarConfig = ({ openSidebar, setOpenSidebar }) => {
   const handleClose = (e) => {
     if (e.target.classList[0]) setOpenSidebar(false);
@@ -12,9 +23,10 @@ const SideBarConfig = ({ openSidebar, setOpenSidebar }) => {
       <div
         className={`fixed ${
           openSidebar ? "right-0" : "right-[-500px]"
-        } w-48 h-full bg-slate-800 transition-all duration-300 text-white p-2 shadow-md`}
+        } w-48 h-full bg-slate-800 transition-all duration-300 text-white shadow-md`}
+        onClick={() => setOpenSidebar(false)}
       >
-        SideBarConfi
+        <LinkCmp to="/naruto">Naruto</LinkCmp>
       </div>
     </div>
   );

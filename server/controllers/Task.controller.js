@@ -27,13 +27,15 @@ export const getTasks = async (req, res) => {
 };
 
 export const createTask = async (req, res) => {
-  const { title, content } = req.body;
-  const query = "INSERT INTO tasks (title, content) VALUES(?, ?)";
+  const { title, content, category, link } = req.body;
+
+  const query =
+    "INSERT INTO tasks (title, content, category, link) VALUES(?, ?, ?, ?)";
 
   try {
     const response = await db.execute({
       sql: query,
-      args: [title, content],
+      args: [title, content || "", category || "", link || ""],
     });
 
     res.status(200).json("Task Created");
@@ -50,6 +52,24 @@ export const deleteTask = async (req, res) => {
       args: [id],
     });
     res.status(200).json("Task Deleted");
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const updateTask = async (req, res) => {
+  try {
+    const { title, content } = req.body;
+    const { id } = req.params;
+
+    const query = `UPDATE tasks SET title = ?, content = ? WHERE id = ?`;
+
+    const response = await db.execute({
+      sql: query,
+      args: [title, content, id],
+    });
+
+    res.status(200).json("Updated...");
   } catch (error) {
     console.log(error);
   }

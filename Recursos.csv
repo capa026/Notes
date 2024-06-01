@@ -1,0 +1,208 @@
+Animaciones|
+Animaciones|
+Animaciones|
+UI|
+Css Layout|
+Components|
+Iconos|
+Iconos svg|
+Animaciones Tailwind|
+Notifications|
+Navegacion por teclado|
+Iconos con animacion|
+Calendario|
+Drag and drop files|
+Formularios|
+Diseño responsive|
+Midudev, galeria de imagenes|
+Separadores css|
+Fuentes|
+Componentes|
+Input para códigos de un uso (OTP)|
+Tooltips|
+Drag and drop|
+Tools|
+Icons|
+UX laws|
+FONDOS|
+Colores
+
+animejs.com|
+framer.com/motion|
+gsap.com|
+uiverse.io|
+https://layout.bradwoods.io|
+https://ui.ibelick.com/|
+lucide.dev|
+https://www.svgrepo.com/|
+https://tailwindcss-animations.vercel.app/?fbclid=IwAR1_OwaWQL7IZxleszf04u_rRofN9Pzw3_oHN5bCRt3xgajSOALp2VG-XBA|
+https://sonner.emilkowal.ski/|
+https://cmdk.paco.me/|
+https://react.useanimations.com/|
+https://react-day-picker.js.org/|
+https://pqina.nl/filepond/|
+https://react-hook-form.com/|
+https://responsively.app/download?fbclid=IwAR1o5GJ-H9MbMZ5Vr4pO4XSGq4d37bgKjRaehCGZikK7Q9Olinrjjl8GVRc|
+https://www.instagram.com/reel/C2h7-jdtF88/?igsh=dW1yamYyeGpybTZt|
+https://bit.ly/css-sections|
+https://www.fontpair.co/|
+React.keepdesign|
+https://www.facebook.com/share/v/4tAFhLVGn7Q54fcK/?mibextid=xfxF2i|
+midu·link/css-tooltip|
+https://drag-and-drop.formkit.com/|
+https://www.toools.design/|
+https://lordicon.com/|
+https://lawsofux.com/|
+https://uvcanvas.com/|
+coolors.co
+
+Librerias
+
+const Librerias = [
+    {
+        "title": "Animaciones",
+        "link": "animejs.com",
+        "category": "Librerias"
+    },
+    {
+        "title": "Animaciones",
+        "link": "framer.com/motion",
+        "category": "Librerias"
+    },
+    {
+        "title": "Animaciones",
+        "link": "gsap.com",
+        "category": "Librerias"
+    },
+    {
+        "title": "UI",
+        "link": "uiverse.io",
+        "category": "Librerias"
+    },
+    {
+        "title": "Css Layout",
+        "link": "https://layout.bradwoods.io",
+        "category": "Librerias"
+    },
+    {
+        "title": "Components",
+        "link": "https://ui.ibelick.com/",
+        "category": "Librerias"
+    },
+    {
+        "title": "Iconos",
+        "link": "lucide.dev",
+        "category": "Librerias"
+    },
+    {
+        "title": "Iconos svg",
+        "link": "https://www.svgrepo.com/",
+        "category": "Librerias"
+    },
+    {
+        "title": "Animaciones Tailwind",
+        "link": "https://tailwindcss-animations.vercel.app/?fbclid=IwAR1_OwaWQL7IZxleszf04u_rRofN9Pzw3_oHN5bCRt3xgajSOALp2VG-XBA",
+        "category": "Librerias"
+    },
+    {
+        "title": "Notifications",
+        "link": "https://sonner.emilkowal.ski/",
+        "category": "Librerias"
+    },
+    {
+        "title": "Navegacion por teclado",
+        "link": "https://cmdk.paco.me/",
+        "category": "Librerias"
+    },
+    {
+        "title": "Iconos con animacion",
+        "link": "https://react.useanimations.com/",
+        "category": "Librerias"
+    },
+    {
+        "title": "Calendario",
+        "link": "https://react-day-picker.js.org/",
+        "category": "Librerias"
+    },
+    {
+        "title": "Drag and drop files",
+        "link": "https://pqina.nl/filepond/",
+        "category": "Librerias"
+    },
+    {
+        "title": "Formularios",
+        "link": "https://react-hook-form.com/",
+        "category": "Librerias"
+    },
+    {
+        "title": "Diseño responsive",
+        "link": "https://responsively.app/download?fbclid=IwAR1o5GJ-H9MbMZ5Vr4pO4XSGq4d37bgKjRaehCGZikK7Q9Olinrjjl8GVRc",
+        "category": "Librerias"
+    },
+    {
+        "title": "Midudev, galeria de imagenes",
+        "link": "https://www.instagram.com/reel/C2h7-jdtF88/?igsh=dW1yamYyeGpybTZt",
+        "category": "Librerias"
+    },
+    {
+        "title": "Separadores css",
+        "link": "https://bit.ly/css-sections",
+        "category": "Librerias"
+    },
+    {
+        "title": "Fuentes",
+        "link": "https://www.fontpair.co/",
+        "category": "Librerias"
+    },
+    {
+        "title": "Componentes",
+        "link": "React.keepdesign",
+        "category": "Librerias"
+    },
+    {
+        "title": "Input para códigos de un uso (OTP)",
+        "link": "https://www.facebook.com/share/v/4tAFhLVGn7Q54fcK/?mibextid=xfxF2i",
+        "category": "Librerias"
+    },
+    {
+        "title": "Tooltips",
+        "link": "midu·link/css-tooltip",
+        "category": "Librerias"
+    },
+    {
+        "title": "Drag and drop",
+        "link": "https://drag-and-drop.formkit.com/",
+        "category": "Librerias"
+    },
+    {
+        "title": "Tools",
+        "link": "https://www.toools.design/",
+        "category": "Librerias"
+    },
+    {
+        "title": "Icons",
+        "link": "https://lordicon.com/",
+        "category": "Librerias"
+    },
+    {
+        "title": "UX laws",
+        "link": "https://lawsofux.com/",
+        "category": "Librerias"
+    },
+    {
+        "title": "FONDOS",
+        "link": "https://uvcanvas.com/",
+        "category": "Librerias"
+    },
+    {
+        "title": "Colores",
+        "link": "coolors.co",
+        "category": "Librerias"
+    },
+    {
+        "title": "",
+        "link": "",
+        "category": "Librerias"
+    }
+]
+

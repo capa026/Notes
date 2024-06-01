@@ -3,6 +3,7 @@ import {
   getNotesRequest,
   createNotesRequest,
   deleteNoteRequest,
+  updateNoteRequest,
 } from "../api/tasksRequests";
 
 const NotesContext = createContext();
@@ -44,9 +45,18 @@ export const NotesProvider = ({ children }) => {
     }
   };
 
+  const updateNote = async (data) => {
+    try {
+      const response = await updateNoteRequest(data);
+      setTrigger(!trigger);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <NotesContext.Provider
-      value={{ notes, getNotes, createNote, deleteNote, trigger }}
+      value={{ notes, getNotes, createNote, deleteNote, updateNote, trigger }}
     >
       {children}
     </NotesContext.Provider>

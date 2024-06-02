@@ -50,7 +50,7 @@ const Modal = ({ openModal, setOpenModal, update, note }) => {
   return (
     <div
       className={`modal--back fixed top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.8)] backdrop-blur-sm flex justify-center place-items-center transition-all duration-150 `}
-      onClick={(e) => handleClose(e)}
+      onMouseDown={(e) => handleClose(e)}
     >
       <div className="flex flex-col text-white bg-slate-900 w-3/4 max-w-96 md:w-1/3 p-5 rounded-xl shadow-xl z-50 gap-5 justify-center place-items-center">
         <div className="flex w-full">

@@ -5,6 +5,8 @@ import {
   deleteNoteRequest,
   updateNoteRequest,
 } from "../api/tasksRequests";
+import { toast } from "sonner";
+import { CircleCheck } from "lucide-react";
 
 const NotesContext = createContext();
 
@@ -22,6 +24,8 @@ export const NotesProvider = ({ children }) => {
     try {
       const response = await createNotesRequest(data);
       setTrigger(!trigger);
+      if (response.status === 200)
+        toast("Nota Creada", { icon: <CircleCheck /> });
     } catch (error) {
       console.log(error);
     }

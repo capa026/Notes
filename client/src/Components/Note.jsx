@@ -1,9 +1,10 @@
-import { Link2, XCircle } from "lucide-react";
+import { CircleAlert, CircleCheck, Link2, XCircle } from "lucide-react";
 import { useNotes } from "../context/Tasks";
 import IconContainer from "./IconContainer";
 import { Link } from "react-router-dom";
 import Modal from "./Modal/Modal";
 import { useState } from "react";
+import { toast } from "sonner";
 
 const Note = ({ note, listMode }) => {
   const { deleteNote } = useNotes();
@@ -11,6 +12,26 @@ const Note = ({ note, listMode }) => {
 
   const handleClick = () => {
     setOpenModal(!openModal);
+  };
+
+  const handleDelete = (n) => {
+    toast("BORRAR: " + " " + n.title, {
+      action: {
+        label: "Si",
+        onClick: () => {
+          deleteNote(n);
+          toast("Nota Borrada", { icon: <CircleCheck /> });
+        },
+      },
+      cancel: {
+        label: "No",
+        onClick: (e) =>
+          toast("Operacion cancelada", {
+            icon: <CircleAlert />,
+            duration: 500,
+          }),
+      },
+    });
   };
 
   return (
@@ -28,7 +49,7 @@ const Note = ({ note, listMode }) => {
         </h1>
         <h1>
           <IconContainer
-            onClick={() => deleteNote(note)}
+            onClick={() => handleDelete(note)}
             icon={<XCircle size={20} color="white" />}
           />
         </h1>

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "nodemon --env-file=.env index.js",
-    "build": "react-scripts build",
+    "build": "node build",
     "deploy": "node index.js"
   },
   "keywords": [

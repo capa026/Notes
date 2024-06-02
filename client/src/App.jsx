@@ -11,6 +11,7 @@ function App() {
       <Toaster
         duration={2000}
         richColors
+        visibleToasts={1}
         toastOptions={{
           unstyled: true,
           classNames: {
